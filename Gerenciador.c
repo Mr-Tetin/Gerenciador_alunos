@@ -10,14 +10,14 @@ typedef struct {
 
 void imprime(int qtdalunos, tipo_aluno alunos[]){
 
-    printf("+-----------------*TABELA DOS ALUNOS*-----------------+\n");
+    printf("+----------------*TABELA DOS ALUNOS*----------------+\n");
     printf("|  %-10s  |  %-10s  |  %-6s  |  %-6s  |\n","NOME", "MATRICULA", "NOTA", "IDADE");
-    printf("+-----------------------------------------------------+");
+    printf("+---------------------------------------------------+");
     for(int i = 0; i < qtdalunos; i++){
         printf("\n|  %-10s  |  %-10d  |  %-6.2f  |  %-6d  |",
                alunos[i].nome, alunos[i].matricula, alunos[i].nota, alunos[i].idade);
     }
-    printf("\n+-----------------------------------------------------+");
+    printf("\n+---------------------------------------------------+");
 }
 int main(){
 
